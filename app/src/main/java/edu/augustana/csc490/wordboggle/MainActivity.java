@@ -12,6 +12,9 @@ public class MainActivity extends ActionBarActivity {
 
     //final ArrayList<String> animals;
 
+    public MainActivity(){
+
+    }
 
     //animals.add("monkey");
 
