@@ -5,11 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SettingsActivity"
-    android:showDividers="beginning|middle|end">
+    android:showDividers="beginning|middle|end"
+    android:background="@color/material_deep_teal_200"
+    android:weightSum="1">
 
     <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="363dp"
+        android:layout_height="92dp"
         android:id="@+id/spinnerCategory"
         android:entries="@array/category_list"
         android:focusable="false"
@@ -18,8 +20,11 @@
         android:prompt="@string/category" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="87dp"
         android:text="Play Game"
-        android:id="@+id/buttonPlayGame" />
+        android:id="@+id/buttonPlayGame"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/material_deep_teal_500"
+        android:textColor="@color/abc_primary_text_material_light" />
 </LinearLayout>

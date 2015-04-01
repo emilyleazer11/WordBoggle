@@ -1,5 +1,10 @@
 package edu.augustana.csc490.wordboggle;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * Created by emilyleazer11 on 4/1/2015.
  */
@@ -7,12 +12,19 @@ public class StringUtilities {
 
 
     public static String wordScramble (String word){
-        //        word.toCharArray();
-//        Arrays.asList(..)
-//        Collections.shuffle(thelist)
-//     have to get it back into a string again?  maybe with a for loop through each character, adding them on to a string (or a StringBuilder)
+        char[] wordCharArray = word.toCharArray();
+        List<Character> wordCharArrayList = new ArrayList<Character>();
+        for(char c : wordCharArray){
+            wordCharArrayList.add(c);
+        }
 
-        return word + word;
+        Collections.shuffle(wordCharArrayList);
+        String scrambledWord = "";
+        for(int i=0; i<wordCharArrayList.size(); i++){
+            scrambledWord = scrambledWord + wordCharArrayList.get(i);
+        }
+
+        return scrambledWord;
     }
 
 

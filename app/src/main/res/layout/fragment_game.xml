@@ -45,7 +45,9 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Large Text"
-            android:id="@+id/textViewScrambledWord" />
+            android:id="@+id/textViewScrambledWord"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
 
