@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity"
+    android:showDividers="beginning|middle|end">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerCategory"
+        android:entries="@array/category_list"
+        android:focusable="false"
+        style="@android:style/Widget.Holo.Spinner"
+        android:spinnerMode="dialog"
+        android:prompt="@string/category" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Game"
+        android:id="@+id/buttonPlayGame" />
+</LinearLayout>

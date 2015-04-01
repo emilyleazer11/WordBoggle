@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="category_list">
+        <item>Animals</item>
+        <item>Foods</item>
+    </string-array>
+    <string-array name="amount_of_time_list">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="animal_list">
+        <item>tiger</item>
+        <item>lion</item>
+        <item>bear</item>
+        <item>monkey</item>
+        <item>gorilla</item>
+    </string-array>
+    <string-array name="food_list">
+        <item>apples</item>
+        <item>hamburger</item>
+        <item>cupcake</item>
+        <item>chips</item>
+        <item>carrots</item>
+    </string-array>
+
+
+</resources>

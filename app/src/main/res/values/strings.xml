@@ -3,4 +3,22 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="settings_activity">Word Boggle Settings</string>
+    <string name="category">Category</string>
+    <string name="category_description">Unscramble animal or food words</string>
+    <string name="timer">Timer</string>
+    <string name="timer_description">Select timer to be 10, 20 or 30 seconds</string>
+    <string name="unscramble_word">Type your answer here</string>
+    <string name="results">idk yet</string>
+    <string name="incorrect_answer">Incorrect!</string>
+    <string name="default_category_message">Setting animals as the default category. One category must be set.</string>
+    <string name="restarting">Game will restart with your new settings</string>
+    <string name="ok">OK</string>
+    <string name="question">Question %1$d of %2$d</string>
+    <string name="reset_game">Reset Game</string>
+    <string name="default_category">animals</string>
+    <string name="answerEditText">answer</string>
+    <string name="wordtoUnscram">Unscramble this word:</string>
+    <string name="submitButton">Submit</string>
 </resources>

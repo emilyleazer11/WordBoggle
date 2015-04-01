@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:entries="@array/amount_of_time_list"
+        android:entryValues="@array/amount_of_time_list"
+        android:key="pref_amountOfTime "
+        android:persistent="true"
+        android:summary="@string/timer_description"
+        android:title="@string/timer"
+        android:defaultValue="30"/>
+
+    <MultiSelectListPreference
+        android:entries="@array/category_list"
+        android:entryValues="@array/category_list"
+        android:key="pref_category"
+        android:persistent="true"
+        android:summary="@string/category_description"
+        android:title="@string/category"
+        android:defaultValue="@array/category_list"/>
+
+
+</PreferenceScreen>
