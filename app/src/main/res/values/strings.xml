@@ -25,4 +25,5 @@
     <string name="playAgainButton">Play Again</string>
     <string name="welcome_Text">WORD BOGGLE</string>
     <string name="instructions">Click below to change category.</string>
+    <string name="directions">Must unscramble 5 words in a row to win.</string> />
 </resources>

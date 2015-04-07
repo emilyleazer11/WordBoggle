@@ -18,9 +18,11 @@
         style="@android:style/Widget.Holo.Spinner"
         android:spinnerMode="dialog"
         android:prompt="@string/category"
+        android:backgroundTint="@color/link_text_material_light"
+        android:background="@color/accent_material_light"
         android:layout_above="@+id/buttonPlayGame"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="53dp" />
+        android:layout_marginBottom="36dp" />
 
     <Button
         android:layout_width="135dp"
@@ -30,9 +32,9 @@
         android:layout_gravity="center_horizontal"
         android:background="@color/material_deep_teal_500"
         android:textColor="@color/abc_primary_text_material_light"
-        android:layout_marginBottom="70dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -52,7 +54,18 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/instructions"
         android:id="@+id/instructionsTextView"
-        android:layout_above="@+id/spinnerCategory"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/directions"
+        android:id="@+id/directionTextView"
+        android:layout_below="@+id/titleTextView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp" />
+        android:layout_marginTop="28dp"
+        android:textSize="18dp" />
 </RelativeLayout>
