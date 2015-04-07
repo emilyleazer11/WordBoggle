@@ -4,7 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <string name="settings_activity">Word Boggle Settings</string>
+    <string name="settings_activity">Word Boggle</string>
     <string name="category">Category</string>
     <string name="category_description">Unscramble animal or food words</string>
     <string name="timer">Timer</string>
@@ -23,4 +23,6 @@
     <string name="submitButton">Submit</string>
     <string name="title_activity_end_game"> </string>
     <string name="playAgainButton">Play Again</string>
+    <string name="welcome_Text">WORD BOGGLE</string>
+    <string name="instructions">Click below to change category.</string>
 </resources>
