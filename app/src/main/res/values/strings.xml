@@ -21,5 +21,6 @@
     <string name="answerEditText">answer</string>
     <string name="wordtoUnscram">Unscramble this word:</string>
     <string name="submitButton">Submit</string>
-    <string name="title_activity_end_game">EndGameActivity</string>
+    <string name="title_activity_end_game"> </string>
+    <string name="playAgainButton">Play Again</string>
 </resources>

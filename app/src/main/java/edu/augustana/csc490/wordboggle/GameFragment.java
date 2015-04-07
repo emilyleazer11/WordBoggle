@@ -26,6 +26,7 @@ public class GameFragment extends Fragment{
 
     //string for error messages
     public static final String TAG = "WordBoggle Activity";
+    public static final String RESULT_EXTRA = "RESULT";
 
 
     //the number of words in the game
@@ -121,16 +122,15 @@ public class GameFragment extends Fragment{
                 textViewScrambled.setText(wordListScrambledWithCharScrambled.get(questionNumber));
                 answerSpace.setText("");
             } else {
-
+                intent.putExtra(RESULT_EXTRA, "Winner");
+                startActivity(intent);
             }
 
         } else {
-
-
-
-
+            intent.putExtra(RESULT_EXTRA, "Loser");
+            startActivity(intent);
         }
-        //startActivity(intent);
+
 
 
     }

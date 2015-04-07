@@ -12,10 +12,30 @@
     </string-array>
     <string-array name="animal_list">
         <item>tiger</item>
-        <item>lion</item>
-        <item>bear</item>
+        <item>horse</item>
+        <item>bunny</item>
         <item>monkey</item>
         <item>gorilla</item>
+        <item>penguin</item>
+        <item>armadillo</item>
+        <item>butterfly</item>
+        <item>cheetah</item>
+        <item>eagle</item>
+        <item>crocodile</item>
+        <item>tortoise</item>
+        <item>elephant</item>
+        <item>flamingo</item>
+        <item>giraffe</item>
+        <item>hummingbird</item>
+        <item>jaguar</item>
+        <item>kangaroo</item>
+        <item>leopard</item>
+        <item>lizard</item>
+        <item>ostrich</item>
+        <item>parrot</item>
+        <item>snake</item>
+        <item>toucan</item>
+        <item>zebra</item>
     </string-array>
     <string-array name="food_list">
         <item>apples</item>
@@ -23,6 +43,26 @@
         <item>cupcake</item>
         <item>chips</item>
         <item>carrots</item>
+        <item>applesauce</item>
+        <item>yogurt</item>
+        <item>cheese</item>
+        <item>butter</item>
+        <item>salad</item>
+        <item>pizza</item>
+        <item>chicken</item>
+        <item>crackers</item>
+        <item>cookies</item>
+        <item>bagels</item>
+        <item>steak</item>
+        <item>pasta</item>
+        <item>sushi</item>
+        <item>broccoli</item>
+        <item>salmon</item>
+        <item>lasagna</item>
+        <item>sausage</item>
+        <item>potato</item>
+        <item>turkey</item>
+        <item>zucchini</item>
     </string-array>
 
 
