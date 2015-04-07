@@ -16,7 +16,7 @@
         android:layout_gravity="fill_horizontal"
         android:hint="@string/unscramble_word"
         android:imeOptions="actionNext"
-        android:inputType="text|textCapWords">
+        android:inputType="text">
 
         <requestFocus/>
     </EditText>

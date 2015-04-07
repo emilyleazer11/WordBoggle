@@ -11,7 +11,7 @@
 
     <Spinner
         android:layout_width="363dp"
-        android:layout_height="92dp"
+        android:layout_height="100dp"
         android:id="@+id/spinnerCategory"
         android:entries="@array/category_list"
         android:focusable="false"

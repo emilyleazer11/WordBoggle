@@ -7,7 +7,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,6 +33,9 @@ public class GameFragment extends Fragment{
 
     private List<String> wordList;
     private List<String> wordListScrambled;
+    private List<String> wordListScrambledWithCharScrambled;
+    private int questionNumber = 0;
+    private EditText answerSpace;
     private String correctAnswer; //correct word spelled right
     private String categoryWanted;
     private int totalAnswered; //amount of questions answered
@@ -64,20 +71,70 @@ public class GameFragment extends Fragment{
 
         }
         wordListScrambled = new ArrayList<String>();
-        for(int i=0; i<wordList.size(); i++){
-            String word = wordList.get(i);
+        wordListScrambled = wordList;
+        wordListScrambledWithCharScrambled = new ArrayList<String>();
+        for(int i=0; i<wordListScrambled.size(); i++){
+            String word = wordListScrambled.get(i);
             String scrambledWord = StringUtilities.wordScramble(word);
-            wordListScrambled.add(scrambledWord);
+            wordListScrambledWithCharScrambled.add(scrambledWord);
         }
 
         TextView textViewScrambled = (TextView) view.findViewById(R.id.textViewScrambledWord);
-        textViewScrambled.setText(wordListScrambled.get(0));
+        textViewScrambled.setText(wordListScrambledWithCharScrambled.get(questionNumber));
 
+        Button submit = (Button) view.findViewById(R.id.submitButton);
+        submit.setOnClickListener(clickListener);
 
-        random = new Random();
+        //random = new Random();
         //timePerGuess = new int();
         return view;
     }
+
+    View.OnClickListener clickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            checkAnswer();
+        }
+    };
+
+    public void checkAnswer(){
+        Intent intent = new Intent(this.getActivity(),EndGameActivity.class);
+        answerSpace = (EditText) this.getView().findViewById(R.id.answerEditText);
+        String answerSpaceString = answerSpace.getText().toString();
+        //EditText answerFromUser = (EditText) this.getView().findViewById(R.id.answerEditText);
+        //String answerFromUserString = answerFromUser.toString();
+
+        Log.w(TAG, "Got answerFromUser = " + answerSpaceString);
+        boolean answerCorrect;
+        if(answerSpaceString.equals(wordListScrambled.get(questionNumber))){
+            Toast.makeText(getActivity(), "Correct!", Toast.LENGTH_SHORT).show();
+            answerCorrect = true;
+        } else {
+            Toast.makeText(getActivity(), "Incorrect!", Toast.LENGTH_SHORT).show();
+            answerCorrect = false;
+        }
+        questionNumber++;
+        answerSpace = (EditText) this.getView().findViewById(R.id.answerEditText);
+        if(answerCorrect){
+            if (questionNumber < 5){
+                TextView textViewScrambled = (TextView) this.getView().findViewById(R.id.textViewScrambledWord);
+                textViewScrambled.setText(wordListScrambledWithCharScrambled.get(questionNumber));
+                answerSpace.setText("");
+            } else {
+
+            }
+
+        } else {
+
+
+
+
+        }
+        //startActivity(intent);
+
+
+    }
+
 
     public void resetGame(){
 
