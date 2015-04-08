@@ -30,7 +30,8 @@
         android:orientation="vertical"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin" >
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1">
 
         <TextView
             android:id="@+id/textViewInstructions"
@@ -39,7 +40,8 @@
             android:layout_gravity="fill_horizontal"
             android:gravity="center_horizontal"
             android:text="@string/wordtoUnscram"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,18 +50,17 @@
             android:text="Large Text"
             android:id="@+id/textViewScrambledWord"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="70dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="99dp"
+            android:text="@string/submitButton"
+            android:id="@+id/submitButton"
             android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
-
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/submitButton"
-        android:id="@+id/submitButton"
-        android:layout_gravity="center_horizontal" />
 
 
 </GridLayout>

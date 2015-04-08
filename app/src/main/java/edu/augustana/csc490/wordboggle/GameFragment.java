@@ -134,19 +134,5 @@ public class GameFragment extends Fragment{
 
 
     }
-
-
-    public void resetGame(){
-
-        //AssetManager assets = getActivity().getAssets();
-        wordList.clear();
-    }
-
-
-
-
-
-
-
 } // end class WordBoggle
 

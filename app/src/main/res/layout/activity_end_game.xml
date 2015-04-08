@@ -26,9 +26,9 @@
         android:layout_height="wrap_content"
         android:text="@string/playAgainButton"
         android:id="@+id/playAgainButton"
-        android:layout_marginTop="64dp"
-        android:layout_below="@+id/resultTextView"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
         android:backgroundTint="@color/abc_search_url_text_pressed"
-        android:background="@color/primary_material_light" />
+        android:background="@color/primary_material_light"
+        android:layout_below="@+id/resultTextView"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
