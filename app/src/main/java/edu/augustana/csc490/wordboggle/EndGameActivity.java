@@ -33,11 +33,13 @@ public class EndGameActivity extends ActionBarActivity {
 
         }
 
+        //accesses Play Again button
         Button playAgain = (Button) findViewById(R.id.playAgainButton);
         playAgain.setOnClickListener(clickListener);
 
     }
 
+    //onClickListener for the Play Again Button
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -45,6 +47,7 @@ public class EndGameActivity extends ActionBarActivity {
         }
     };
 
+    //starts the SettingsActivity over in order to play game again
     public void beginGameAgain(){
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);

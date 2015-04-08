@@ -18,10 +18,14 @@ public class SettingsActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        //accesses the Play Game button so when clicked it moved to the
+        //next activity to play the game
         Button playGame = (Button) findViewById(R.id.buttonPlayGame);
         playGame.setOnClickListener(clickListener);
     }
 
+    //creating onClickListener for the playGame button and calls the
+    //start Game method
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -29,6 +33,7 @@ public class SettingsActivity extends Activity
         }
     };
 
+    //starts the next activity when the Play Game button is clicked
     public void startGame() {
         Intent intent = new Intent(this, MainActivity.class);
         Spinner spinnerCategoryText = (Spinner) findViewById(R.id.spinnerCategory);

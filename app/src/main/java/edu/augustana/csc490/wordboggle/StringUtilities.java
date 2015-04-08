@@ -1,7 +1,6 @@
 package edu.augustana.csc490.wordboggle;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -11,6 +10,7 @@ import java.util.List;
 public class StringUtilities {
 
 
+    //sends a word in from either animal or food array list and returns the word scrambled
     public static String wordScramble (String word){
         char[] wordCharArray = word.toCharArray();
         List<Character> wordCharArrayList = new ArrayList<Character>();
